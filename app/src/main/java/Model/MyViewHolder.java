@@ -9,9 +9,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.realmdatabase.R;
 
 public class MyViewHolder extends RecyclerView.ViewHolder {
-    TextView textViewl;
+    TextView textViewl, ageTV;
     public MyViewHolder(@NonNull View itemView) {
         super(itemView);
         textViewl = itemView.findViewById(R.id.nameTV);
+        ageTV = itemView.findViewById(R.id.ageTV);
     }
 }

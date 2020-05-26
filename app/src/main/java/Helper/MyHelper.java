@@ -29,7 +29,6 @@ public class MyHelper {
         for (Student student : studentRealmResults){
             listData.add(student);
         }
-
         Log.e("data",listData.toString());
 
         return listData;

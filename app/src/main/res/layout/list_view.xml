@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/nameTV"
         android:text="ASHISH"
         android:textSize="25dp"/>
 
-</LinearLayout>
+    <TextView
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:layout_toRightOf="@id/nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ageTV"
+        android:text="ASHISH"
+        android:textSize="25dp"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

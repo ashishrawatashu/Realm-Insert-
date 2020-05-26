@@ -7,7 +7,15 @@ public class Student extends RealmObject {
 
     @PrimaryKey
     private int student_id;
-    private String name;
+    private String name, age;
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
 
     public int getId() {
         return student_id;
@@ -24,4 +32,7 @@ public class Student extends RealmObject {
     public void setName(String name) {
         this.name = name;
     }
+
+
+
 }

@@ -12,7 +12,7 @@ public class MyApplication extends Application {
         super.onCreate();
         Realm.init(this);
         RealmConfiguration realmConfiguration = new RealmConfiguration.Builder()
-                .name("StudentData.realm")
+                .name("Student.realm")
                 .schemaVersion(42)
                 .migration(new MyMigration())
                 .build();
